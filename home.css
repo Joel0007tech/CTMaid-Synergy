@@ -3,17 +3,24 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 header {
   background-color: white;
+  height: 90px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
+nav img {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 nav ul li {
   list-style: none;
@@ -23,7 +30,7 @@ nav ul li a {
   font-family: "Hanken Grotesk", sans-serif;
   color: black;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 nav ul li a:hover {
   border-bottom: 1px solid orange;
@@ -39,20 +46,23 @@ nav ul li a:hover {
 }
 .synergy {
   background-color: whitesmoke;
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 .first-heading-paragraph h2 {
   color: black;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 10px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 900;
 }
 .first-heading-paragraph p {
   color: black;
   text-align: center;
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  line-height: 30px;
 }
 .first-image-synergy {
   display: flex;
@@ -67,15 +77,18 @@ nav ul li a:hover {
 .second-heading-paragraph h2 {
   color: black;
   text-align: center;
-  font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
   padding-top: 4%;
+  font-weight: 900;
 }
 .second-heading-paragraph p {
   color: black;
   text-align: center;
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .impact-synergy-flex {
   display: flex;
@@ -86,6 +99,8 @@ nav ul li a:hover {
 .impact-synergy-flex p {
   text-align: center;
   font-size: 16px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
 }
 .first-impact-synergy {
   background-color: white;
@@ -101,7 +116,7 @@ nav ul li a:hover {
   text-align: center;
   color: orange;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .second-impact-synergy {
   background-color: white;
@@ -117,7 +132,7 @@ nav ul li a:hover {
   text-align: center;
   color: orange;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .third-impact-synergy {
   background-color: white;
@@ -133,7 +148,7 @@ nav ul li a:hover {
   text-align: center;
   color: orange;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .fourth-impact-synergy {
   background-color: white;
@@ -149,7 +164,7 @@ nav ul li a:hover {
   text-align: center;
   color: orange;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .assistance {
   padding-top: 9%;
@@ -157,13 +172,17 @@ nav ul li a:hover {
 .assistance h3 {
   text-align: center;
   color: black;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 900;
 }
 .assistance p {
   text-align: center;
   color: black;
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
 }
 .assistance-cards {
   display: flex;
@@ -186,16 +205,19 @@ nav ul li a:hover {
   padding-top: 3.5rem;
   position: relative;
   left: 115px;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .first-assistance-sub-cards p {
   background-color: rgb(212, 217, 221);
   border-radius: 70px;
   font-size: 13px;
-  width: 400px;
+  width: 450px;
   text-align: justify;
   height: 130px;
-  padding-top: 2rem;
+  padding-top: 1.3rem;
   padding-left: 8rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
 }
 .second-assistance-sub-cards {
   display: flex;
@@ -211,6 +233,7 @@ nav ul li a:hover {
   padding-top: 3.5rem;
   position: relative;
   left: 110px;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .second-assistance-sub-cards p {
   background-color: rgb(243, 217, 221);
@@ -221,6 +244,8 @@ nav ul li a:hover {
   height: 130px;
   padding-top: 2rem;
   padding-left: 8rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
 }
 .solutions {
   padding-top: 6%;
@@ -228,10 +253,13 @@ nav ul li a:hover {
 .solutions h3 {
   text-align: center;
   font-size: 25px;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .solutions p {
   text-align: center;
   font-size: 16px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
 }
 .solutions-flex {
   display: flex;
@@ -243,10 +271,13 @@ nav ul li a:hover {
   text-align: center;
   font-size: 16px;
   color: steelblue;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 .solutions-flex p {
   text-align: center;
   font-size: 13px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
 }
 .first-solutions-flex {
   display: flex;
@@ -315,6 +346,21 @@ nav ul li a:hover {
 .clients h3 {
   text-align: center;
   font-size: 25px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.clients-img-flex {
+  display: flex;
+  gap: 50px;
+  padding-top: 3%;
+  justify-content: space-around;
+}
+.clients-img-flex .mobil {
+  position: relative;
+  top: 50px;
+}
+.clients-img-flex .uba {
+  position: relative;
+  top: 40px;
 }
 .bin-images {
   display: flex;
@@ -335,10 +381,11 @@ nav ul li a:hover {
   margin-top: 4%;
 }
 .request-paragraph-link p {
-  font-size: 25px;
-
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
   font-weight: 900;
-  word-spacing: 5px;
+  word-spacing: 2px;
+  font-weight: 900;
 }
 .request-paragraph-link a {
   padding: 10px;
@@ -350,4 +397,23 @@ nav ul li a:hover {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 10px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+}
+#footer-items {
+  position: static;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+#footer-items p {
+  position: relative;
+  top: 80%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+#footer-items img {
+  position: relative;
+  top: 50%;
 }

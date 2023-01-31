@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+header {
+  background-color: white;
+  height: 90px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+nav img {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
+nav ul {
+  display: flex;
+  gap: 80px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid orange;
+}
+.contact {
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
