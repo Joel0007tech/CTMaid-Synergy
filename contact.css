@@ -32,7 +32,12 @@ nav ul li a {
   font-weight: 600;
 }
 nav ul li a:hover {
-  border-bottom: 1px solid orange;
+  border: 3px solid orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 .contact {
   padding: 10px;
@@ -42,4 +47,157 @@ nav ul li a:hover {
   padding-right: 30px;
   text-align: center;
   border-radius: 10px;
+}
+.contact-items {
+  background-color: whitesmoke;
+  padding-top: 7%;
+}
+.first-contact-items {
+  text-align: center;
+}
+.first-contact-items h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: orange;
+  padding-top: 2%;
+}
+.first-contact-items h2 {
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+}
+.first-contact-items p {
+  font-size: 16px;
+  font-family: "Hanken Grotesk", sans-serif;
+  padding-top: 2%;
+  font-weight: 500;
+}
+.first-contact-items img {
+  position: relative;
+  top: 25px;
+  right: 14%;
+}
+.support-customer {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.support-customer p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: gray;
+}
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.support h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  color: rgb(70, 68, 68);
+}
+.support p {
+  position: relative;
+  right: 90px;
+}
+.support a {
+  position: relative;
+  right: 60px;
+  color: steelblue;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+.customer-care {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.customer-care h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: rgb(70, 68, 68);
+}
+.customer-care a {
+  color: steelblue;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+.whatsapp-address-facebook {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10%;
+}
+.whatsapp-address-facebook h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  color: rgb(70, 68, 68);
+}
+.whatsapp-address-facebook p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: gray;
+}
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.whatsapp p {
+  color: steelblue;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.address p {
+  position: relative;
+  right: 85px;
+}
+.facebook {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.facebook p {
+  position: relative;
+  right: 20px;
+}
+.contact-img {
+  width: 100%;
+  background-color: rgb(194, 226, 252);
+  margin-top: 7%;
+}
+.contact-img img {
+  display: block;
+  margin: 0 auto;
+}
+#footer-items {
+  position: static;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  justify-content: space-around;
+}
+#footer-items p {
+  position: relative;
+  top: 80%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+#footer-items img {
+  position: relative;
+  top: 50%;
+}
+.links {
+  position: relative;
+  top: 18px;
+  display: flex;
+  gap: 20px;
 }

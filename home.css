@@ -15,12 +15,14 @@ nav {
 }
 nav img {
   position: relative;
-  bottom: 30px;
-  left: 30px;
+  bottom: 35px;
+  left: 80px;
 }
 nav ul {
   display: flex;
   gap: 80px;
+  position: relative;
+  right: 60px;
 }
 nav ul li {
   list-style: none;
@@ -30,10 +32,15 @@ nav ul li a {
   font-family: "Hanken Grotesk", sans-serif;
   color: black;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 nav ul li a:hover {
-  border-bottom: 1px solid orange;
+  border: 3px solid orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 .contact {
   padding: 10px;
@@ -95,12 +102,13 @@ nav ul li a:hover {
   gap: 50px;
   margin-top: 2%;
   justify-content: center;
+  
 }
 .impact-synergy-flex p {
   text-align: center;
   font-size: 16px;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .first-impact-synergy {
   background-color: white;
@@ -214,10 +222,12 @@ nav ul li a:hover {
   width: 450px;
   text-align: justify;
   height: 130px;
-  padding-top: 1.3rem;
+  padding-top: 1.1rem;
   padding-left: 8rem;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 20px;
+  color: gray;
 }
 .second-assistance-sub-cards {
   display: flex;
@@ -245,7 +255,9 @@ nav ul li a:hover {
   padding-top: 2rem;
   padding-left: 8rem;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 20px;
+  color: gray;
 }
 .solutions {
   padding-top: 6%;
@@ -257,9 +269,10 @@ nav ul li a:hover {
 }
 .solutions p {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .solutions-flex {
   display: flex;
@@ -277,7 +290,9 @@ nav ul li a:hover {
   text-align: center;
   font-size: 13px;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
+  color: gray;
+  line-height: 20px;
 }
 .first-solutions-flex {
   display: flex;
@@ -383,7 +398,6 @@ nav ul li a:hover {
 .request-paragraph-link p {
   font-size: 30px;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
   word-spacing: 2px;
   font-weight: 900;
 }
@@ -401,19 +415,28 @@ nav ul li a:hover {
   font-weight: 800;
 }
 #footer-items {
-  position: static;
-  bottom: 0;
-  height: 100px;
   display: flex;
   flex-direction: row;
-  overflow-y: hidden;
+  justify-content: space-around;
+  height: 20px;
+  position: relative;
+  top: 50px;
 }
 #footer-items p {
   position: relative;
   top: 80%;
   font-family: "Hanken Grotesk", sans-serif;
+  position: relative;
+  top: 80px;
 }
 #footer-items img {
   position: relative;
-  top: 50%;
+  top: 50px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 20px;
+  gap: 30px;
 }
