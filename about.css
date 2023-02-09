@@ -54,7 +54,7 @@ nav ul li a:hover {
   padding: 10%;
   background-color: whitesmoke;
 }
-.about-text h4 {
+.about-text h1 {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 30px;
   font-weight: 900;
@@ -103,6 +103,10 @@ nav ul li a:hover {
 #footer-items img {
   position: relative;
   top: 50%;
+}
+.logo-footer {
+  position: relative;
+  bottom: 30px;
 }
 .links {
   position: relative;
