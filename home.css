@@ -263,8 +263,9 @@ nav ul li a:hover {
 }
 .solutions h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 900;
 }
 .solutions p {
   text-align: center;
@@ -362,6 +363,7 @@ nav ul li a:hover {
   text-align: center;
   font-size: 25px;
   font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 900;
 }
 .clients-img-flex {
   display: flex;
