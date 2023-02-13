@@ -1,444 +1,971 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
+@media screen and (min-width: 429px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  header {
+    background-color: white;
+    height: 90px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  nav img {
+    position: relative;
+    bottom: 35px;
+    left: 80px;
+  }
+  nav ul {
+    display: flex;
+    gap: 80px;
+    position: relative;
+    right: 60px;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+  }
+  nav ul li a:hover {
+    border: 3px solid orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .contact {
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #mobile-view {
+    display: none;
+  }
+  .synergy {
+    background-color: whitesmoke;
+    padding-top: 8rem;
+  }
+
+  .synergy-mobile {
+    display: none;
+  }
+  .synord {
+    display: none;
+  }
+  .first-heading-paragraph h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+  }
+  .first-heading-paragraph p {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .first-heading-paragraph-mobile {
+    display: none;
+  }
+  .first-image-synergy {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .first-image-synergy-mobile {
+    display: none;
+  }
+  .second-heading-paragraph {
+    padding-top: 5%;
+  }
+  .second-heading-paragraph h2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-top: 4%;
+    font-weight: 900;
+  }
+  .second-heading-paragraph p {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .second-heading-paragraph-mobile {
+    display: none;
+  }
+  .impact-synergy-flex {
+    display: flex;
+    gap: 50px;
+    margin-top: 2%;
+    justify-content: center;
+    box-shadow: 0px 0px 90px 0.1px rgba(0, 0, 2, 0.1);
+  }
+  .impact-synergy-flex p {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+  }
+  .impact-synergy-flex-mobile {
+    display: none;
+  }
+  .first-impact-synergy {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    gap: 5px;
+  }
+  .first-impact-synergy h5 {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .first-impact-synergy-mobile {
+    display: none;
+  }
+  .second-impact-synergy {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    gap: 5px;
+  }
+  .second-impact-synergy h5 {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .second-impact-synergy-mobile {
+    display: none;
+  }
+  .third-impact-synergy {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    gap: 5px;
+  }
+  .third-impact-synergy h5 {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .third-impact-synergy-mobile {
+    display: none;
+  }
+  .fourth-impact-synergy {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    gap: 5px;
+  }
+  .fourth-impact-synergy h5 {
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .fourth-impact-synergy-mobile {
+    display: none;
+  }
+  .assistance {
+    padding-top: 9%;
+  }
+  .assistance h3 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+  }
+  .assistance p {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+  }
+  .assistance-mobile {
+    display: none;
+  }
+  .assistance-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .assistance-cards-mobile {
+    display: none;
+  }
+  .first-assistance-sub-cards {
+    display: flex;
+  }
+  .first-assistance-sub-cards h3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 15px;
+    padding-top: 3.5rem;
+    position: relative;
+    left: 115px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .first-assistance-sub-cards p {
+    background-color: rgb(212, 217, 221);
+    border-radius: 70px;
+    font-size: 13px;
+    width: 450px;
+    text-align: justify;
+    height: 130px;
+    padding-top: 1.1rem;
+    padding-left: 8rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    color: gray;
+  }
+  .first-assistance-sub-cards-mobile {
+    display: none;
+  }
+  .second-assistance-sub-cards {
+    display: flex;
+  }
+  .second-assistance-sub-cards h3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-top: 3.5rem;
+    position: relative;
+    left: 110px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .second-assistance-sub-cards p {
+    background-color: rgb(243, 217, 221);
+    border-radius: 70px;
+    font-size: 13px;
+    width: 400px;
+    text-align: justify;
+    height: 130px;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    color: gray;
+  }
+  .second-assistance-sub-cards-mobile {
+    display: none;
+  }
+  .solutions {
+    padding-top: 6%;
+  }
+  .solutions h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+  }
+  .solutions p {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .solutions-mobile {
+    display: none;
+  }
+  .solutions-flex {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 3%;
+    box-shadow: 0px 0px 90px 0.1px rgba(0, 0, 2, 0.1);
+  }
+  .solutions-flex h3 {
+    text-align: center;
+    font-size: 16px;
+    color: steelblue;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .solutions-flex p {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+    color: gray;
+    line-height: 20px;
+  }
+  .solutions-flex-mobile {
+    display: none;
+  }
+  .first-solutions-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .first-solutions-flex img {
+    display: block;
+    margin: 0 auto;
+  }
+  .first-solutions-flex-mobile {
+    display: none;
+  }
+  .second-solutions-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .second-solutions-flex img {
+    display: block;
+    margin: 0 auto;
+  }
+  .second-solutions-flex-mobile {
+    display: none;
+  }
+  .third-solutions-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    padding-top: 2.4%;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .third-solutions-flex img {
+    display: block;
+    margin: 0 auto;
+  }
+  .third-solutions-flex-mobile {
+    display: none;
+  }
+  .fourth-solutions-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .fourth-solutions-flex img {
+    display: block;
+    margin: 0 auto;
+  }
+  .fourth-solutions-flex-mobile {
+    display: none;
+  }
+  .clients {
+    padding-top: 7%;
+  }
+  .clients h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+  }
+  .clients-mobile {
+    display: none;
+  }
+  .clients-img-flex {
+    display: flex;
+    gap: 50px;
+    padding-top: 3%;
+    justify-content: space-around;
+  }
+  .clients-img-flex .mobil {
+    position: relative;
+    top: 50px;
+  }
+  .clients-img-flex .uba {
+    position: relative;
+    top: 40px;
+  }
+  .clients-img-flex-mobile {
+    display: none;
+  }
+  .bin-images {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+  }
+  .btn-images-mobile {
+    display: none;
+  }
+  .request {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 9%;
+    background-color: rgb(212, 217, 221);
+  }
+  .request-mobile {
+    display: none;
+  }
+  .request-paragraph-link {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 4%;
+  }
+  .request-paragraph-link p {
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    word-spacing: 2px;
+    font-weight: 900;
+  }
+  .request-paragraph-link a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 800;
+  }
+  .request-paragraph-link-mobile {
+    display: none;
+  }
+  #footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    position: relative;
+    top: 50px;
+  }
+  #footer-items p {
+    position: relative;
+    top: 80%;
+    font-family: "Hanken Grotesk", sans-serif;
+    position: relative;
+    top: 80px;
+  }
+  #footer-items img {
+    position: relative;
+    top: 50px;
+  }
+  #footer-items-mobile {
+    display: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 20px;
+    gap: 30px;
+  }
 }
 
-header {
-  background-color: white;
-  height: 90px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-nav img {
-  position: relative;
-  bottom: 35px;
-  left: 80px;
-}
-nav ul {
-  display: flex;
-  gap: 80px;
-  position: relative;
-  right: 60px;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-family: "Hanken Grotesk", sans-serif;
-  color: black;
-  font-size: 18px;
-  font-weight: 900;
-}
-nav ul li a:hover {
-  border: 3px solid orange;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.contact {
-  padding: 10px;
-  background-color: steelblue;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  border-radius: 10px;
-}
-.synergy {
-  background-color: whitesmoke;
-  padding-top: 8rem;
-}
-.first-heading-paragraph h1 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
-}
-.first-heading-paragraph p {
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-  line-height: 30px;
-}
-.first-image-synergy {
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  justify-content: center;
-  margin-top: 5%;
-}
-.second-heading-paragraph {
-  padding-top: 5%;
-}
-.second-heading-paragraph h2 {
-  color: black;
-  text-align: center;
-  font-size: 30px;
-  font-family: "Hanken Grotesk", sans-serif;
-  padding-top: 4%;
-  font-weight: 900;
-}
-.second-heading-paragraph p {
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-  margin-top: 10px;
-}
-.impact-synergy-flex {
-  display: flex;
-  gap: 50px;
-  margin-top: 2%;
-  justify-content: center;
-  box-shadow: 0px 0px 90px 0.1px rgba(0, 0, 2, 0.1);
-}
-.impact-synergy-flex p {
-  text-align: center;
-  font-size: 16px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-}
-.first-impact-synergy {
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-  gap: 5px;
-}
-.first-impact-synergy h5 {
-  text-align: center;
-  color: orange;
-  font-size: 25px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.second-impact-synergy {
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-  gap: 5px;
-}
-.second-impact-synergy h5 {
-  text-align: center;
-  color: orange;
-  font-size: 25px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.third-impact-synergy {
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-  gap: 5px;
-}
-.third-impact-synergy h5 {
-  text-align: center;
-  color: orange;
-  font-size: 25px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.fourth-impact-synergy {
-  background-color: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-  gap: 5px;
-}
-.fourth-impact-synergy h5 {
-  text-align: center;
-  color: orange;
-  font-size: 25px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.assistance {
-  padding-top: 9%;
-}
-.assistance h3 {
-  text-align: center;
-  color: black;
-  font-size: 30px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
-}
-.assistance p {
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  margin-top: 10px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-}
-.assistance-cards {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: center;
-  margin-top: 5%;
-}
-.first-assistance-sub-cards {
-  display: flex;
-}
-.first-assistance-sub-cards h3 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: steelblue;
-  color: white;
-  padding: 15px;
-  padding-top: 3.5rem;
-  position: relative;
-  left: 115px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.first-assistance-sub-cards p {
-  background-color: rgb(212, 217, 221);
-  border-radius: 70px;
-  font-size: 13px;
-  width: 450px;
-  text-align: justify;
-  height: 130px;
-  padding-top: 1.1rem;
-  padding-left: 8rem;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 700;
-  line-height: 20px;
-  color: gray;
-}
-.second-assistance-sub-cards {
-  display: flex;
-}
-.second-assistance-sub-cards h3 {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background-color: orange;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  padding-top: 3.5rem;
-  position: relative;
-  left: 110px;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.second-assistance-sub-cards p {
-  background-color: rgb(243, 217, 221);
-  border-radius: 70px;
-  font-size: 13px;
-  width: 400px;
-  text-align: justify;
-  height: 130px;
-  padding-top: 2rem;
-  padding-left: 8rem;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 700;
-  line-height: 20px;
-  color: gray;
-}
-.solutions {
-  padding-top: 6%;
-}
-.solutions h3 {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
-}
-.solutions p {
-  text-align: center;
-  font-size: 18px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-  margin-top: 10px;
-}
-.solutions-flex {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  padding-top: 3%;
-  box-shadow: 0px 0px 90px 0.1px rgba(0, 0, 2, 0.1);
-}
-.solutions-flex h3 {
-  text-align: center;
-  font-size: 16px;
-  color: steelblue;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-.solutions-flex p {
-  text-align: center;
-  font-size: 13px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 600;
-  color: gray;
-  line-height: 20px;
-}
-.first-solutions-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 35px;
-  background-color: white;
-  border-radius: 45%;
-  border-bottom: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.first-solutions-flex img {
-  display: block;
-  margin: 0 auto;
-}
-.second-solutions-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 35px;
-  background-color: white;
-  border-radius: 45%;
-  border-bottom: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.second-solutions-flex img {
-  display: block;
-  margin: 0 auto;
-}
-.third-solutions-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 15px;
-  padding-top: 2.4%;
-  background-color: white;
-  border-radius: 45%;
-  border-bottom: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.third-solutions-flex img {
-  display: block;
-  margin: 0 auto;
-}
-.fourth-solutions-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 35px;
-  background-color: white;
-  border-radius: 45%;
-  border-bottom: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.fourth-solutions-flex img {
-  display: block;
-  margin: 0 auto;
-}
-.clients {
-  padding-top: 7%;
-}
-.clients h3 {
-  text-align: center;
-  font-size: 25px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 900;
-}
-.clients-img-flex {
-  display: flex;
-  gap: 50px;
-  padding-top: 3%;
-  justify-content: space-around;
-}
-.clients-img-flex .mobil {
-  position: relative;
-  top: 50px;
-}
-.clients-img-flex .uba {
-  position: relative;
-  top: 40px;
-}
-.bin-images {
-  display: flex;
-  justify-content: center;
-  padding-top: 7%;
-}
-.request {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-top: 9%;
-  background-color: rgb(212, 217, 221);
-}
-.request-paragraph-link {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 4%;
-}
-.request-paragraph-link p {
-  font-size: 30px;
-  font-family: "Hanken Grotesk", sans-serif;
-  word-spacing: 2px;
-  font-weight: 900;
-}
-.request-paragraph-link a {
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  background-color: steelblue;
-  text-align: center;
-  width: fit-content;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 800;
-}
-#footer-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 20px;
-  position: relative;
-  top: 50px;
-}
-#footer-items p {
-  position: relative;
-  top: 80%;
-  font-family: "Hanken Grotesk", sans-serif;
-  position: relative;
-  top: 80px;
-}
-#footer-items img {
-  position: relative;
-  top: 50px;
-}
-.links {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 20px;
-  gap: 30px;
+@media screen and (max-width: 428px) {
+  header {
+    display: none;
+  }
+
+  .synergy {
+    display: none;
+  }
+
+  #footer-items {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .sidepanel {
+    height: 130px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 110px;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    padding-top: 2px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: left;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    padding-bottom: 10px;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 50px;
+    font-weight: 500;
+    border: none;
+    justify-content: right;
+  }
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    gap: 60px;
+    bottom: 100px;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 10px;
+    border-width: 5px;
+  }
+
+  .openbtn {
+    font-size: 45px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: white;
+    position: relative;
+    top: 17px;
+  }
+  .synergy-mobile {
+    background-color: whitesmoke;
+  }
+  .first-heading-mobile h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+  }
+  .first-heading-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .first-image-synergy-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 3%;
+    padding-top: 15%;
+  }
+  .second-heading-paragraph-mobile h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15%;
+  }
+  .second-heading-paragraph-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .impact-synergy-flex-mobile {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: whitesmoke;
+  }
+  .impact-synergy-flex-mobile h5 {
+    text-align: center;
+    color: orange;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+  }
+  .impact-synergy-flex-mobile p {
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    position: relative;
+    bottom: 70px;
+    font-size: 20px;
+  }
+  .first-impact-synergy-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid rgb(214, 212, 212);
+    border-top: none;
+    border-radius: 25px;
+    height: 120px;
+    padding-top: 15%;
+  }
+  .first-impact-synergy-mobile img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .second-impact-synergy-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid rgb(214, 212, 212);
+    border-top: none;
+    border-radius: 25px;
+    height: 120px;
+    padding-top: 15%;
+  }
+  .second-impact-synergy-mobile img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .third-impact-synergy-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid rgb(214, 212, 212);
+    border-top: none;
+    border-radius: 25px;
+    height: 120px;
+    padding-top: 15%;
+  }
+  .third-impact-synergy-mobile img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .fourth-impact-synergy-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid rgb(214, 212, 212);
+    border-top: none;
+    border-radius: 25px;
+    height: 120px;
+    padding-top: 15%;
+  }
+  .fourth-impact-synergy-mobile img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .assistance-mobile {
+    padding: 5%;
+  }
+  .assistance-mobile h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+  .assistance-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    bottom: 20px;
+  }
+  .assistance-cards-mobile {
+    padding-top: 5px;
+  }
+  .first-assistance-sub-cards-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .first-assistance-sub-cards-mobile h3 {
+    height: 100px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: steelblue;
+    padding-top: 5rem;
+    margin: 0 auto;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  .first-assistance-sub-cards-mobile p {
+    margin: 0 auto;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 3rem;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .second-assistance-sub-cards-mobile h3 {
+    height: 100px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: orange;
+    padding-top: 5rem;
+    margin: 0 auto;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 25%;
+  }
+  .second-assistance-sub-cards-mobile p {
+    margin: 0 auto;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 3rem;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .solutions-mobile {
+    padding-top: 15%;
+  }
+  .solutions-mobile h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 800;
+  }
+  .solutions-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+  }
+  .solutions-flex-mobile h3 {
+    text-align: center;
+    font-size: 16px;
+    color: steelblue;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .solutions-flex-mobile p {
+    text-align: center;
+    font-size: 12px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+    color: gray;
+    line-height: 20px;
+  }
+  .solutions-flex-mobile {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .first-solutions-flex-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+  }
+  .first-solutions-flex-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .second-solutions-flex-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+  }
+  .second-solutions-flex-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .third-solutions-flex-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+  }
+  .third-solutions-flex-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .fourth-solutions-flex-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 45%;
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+  }
+  .fourth-solutions-flex-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .clients-mobile {
+    padding-top: 7%;
+  }
+  .clients-mobile h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+  }
+  .clients-img-flex-mobile {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  .request-paragraph-link-mobile {
+    padding: 5%;
+    padding-bottom: 15%;
+    background-color: rgb(143, 126, 255);
+    margin-top: 10%;
+  }
+  .request-paragraph-link-mobile p {
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 900;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .request-paragraph-link-mobile a {
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+  }
+  #footer-items-mobile {
+    padding-top: 10%;
+  }
+  #footer-items-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .links-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 25px;
+  }
 }

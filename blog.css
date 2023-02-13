@@ -1,128 +1,241 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
+@media screen and (min-width: 429px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  #mobile-view {
+    display: none;
+  }
+  header {
+    background-color: white;
+    height: 90px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  nav img {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+  }
+  nav ul {
+    display: flex;
+    gap: 80px;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    border: 3px solid orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .contact {
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .blog-post-mobile {
+    display: none;
+  }
+  .blog-post {
+    display: flex;
+    padding: 7%;
+    background-color: whitesmoke;
+  }
+  .blog-post h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-top: 5%;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .blog-post h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-bottom: 3%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .blog-post h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-bottom: 2%;
+    padding-top: 13%;
+    color: black;
+  }
+  .blog-texts-mobile {
+    display: none;
+  }
+  .blog-texts ol li {
+    list-style-position: inside;
+    list-style-type: decimal;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+    margin-top: 10px;
+  }
+  .blog-texts ul li {
+    list-style-type: symbols(bullet);
+    list-style-position: inside;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+    margin-top: 10px;
+  }
+  .blog-texts img {
+    position: relative;
+    left: 90%;
+  }
+  .blog-post img {
+    position: relative;
+    top: 30px;
+  }
+  #footer-items-mobile {
+    display: none;
+  }
+  #footer-items {
+    position: static;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    justify-content: space-around;
+  }
+  #footer-items p {
+    position: relative;
+    top: 80%;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  #footer-items img {
+    position: relative;
+    top: 50%;
+  }
+  .logo-footer-mobile {
+    display: none;
+  }
+  .logo-footer {
+    position: relative;
+    bottom: 30px;
+  }
+  .links-mobile {
+    display: none;
+  }
+  .links {
+    position: relative;
+    top: 18px;
+    display: flex;
+    gap: 20px;
+  }
 }
-header {
-  background-color: white;
-  height: 90px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-nav img {
-  position: relative;
-  bottom: 30px;
-  left: 30px;
-}
-nav ul {
-  display: flex;
-  gap: 80px;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-family: "Hanken Grotesk", sans-serif;
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-}
-nav ul li a:hover {
-  border: 3px solid orange;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.contact {
-  padding: 10px;
-  background-color: steelblue;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  border-radius: 10px;
-}
-.blog-post {
-  display: flex;
-  padding: 7%;
-  background-color: whitesmoke;
-}
-.blog-post h1 {
-  font-family: "Hanken Grotesk", sans-serif;
-  padding-top: 5%;
-  font-size: 40px;
-  font-weight: 700;
-}
-.blog-post h2 {
-  font-family: "Hanken Grotesk", sans-serif;
-  margin-bottom: 3%;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 16px;
-}
-.blog-post h3 {
-  font-family: "Hanken Grotesk", sans-serif;
-  margin-bottom: 2%;
-  padding-top: 13%;
-  color: black;
-}
-.blog-texts ol li {
-  list-style-position: inside;
-  list-style-type: decimal;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: gray;
-  margin-top: 10px;
-}
-.blog-texts ul li {
-  list-style-type: symbols(bullet);
-  list-style-position: inside;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: gray;
-  margin-top: 10px;
-}
-.blog-texts img {
-  position: relative;
-  left: 90%;
-}
-.blog-post img {
-  position: relative;
-  top: 30px;
-}
-#footer-items {
-  position: static;
-  bottom: 0;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
-  justify-content: space-around;
-}
-#footer-items p {
-  position: relative;
-  top: 80%;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-#footer-items img {
-  position: relative;
-  top: 50%;
-}
-.logo-footer {
-  position: relative;
-  bottom: 30px;
-}
-.links {
-  position: relative;
-  top: 18px;
-  display: flex;
-  gap: 20px;
+
+@media screen and (max-width: 428px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  header {
+    display: none;
+  }
+  .sidepanel {
+    height: 100px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 110px;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    padding-top: 2px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: left;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    padding-bottom: 10px;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 50px;
+    font-weight: 800;
+    border: none;
+    justify-content: right;
+  }
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    gap: 60px;
+    bottom: 100px;
+  }
+  .openbtn {
+    font-size: 45px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+  }
+  .blog-post {
+    display: none;
+  }
+  .blog-texts {
+    display: none;
+  }
+  #footer-items {
+    display: none;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
 }

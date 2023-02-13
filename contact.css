@@ -1,207 +1,484 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
+@media screen and (min-width: 429px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  header {
+    background-color: white;
+    height: 90px;
+  }
+  #mobile-view {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  nav img {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+  }
+  nav ul {
+    display: flex;
+    gap: 80px;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    border: 3px solid orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .contact {
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .contact-items {
+    background-color: whitesmoke;
+    padding-top: 7%;
+  }
+  .contact-items-mobile {
+    display: none;
+  }
+  .first-contact-items {
+    text-align: center;
+  }
+  .first-contact-items-mobile {
+    display: none;
+  }
+  .first-contact-items h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: orange;
+    padding-top: 2%;
+  }
+  .first-contact-items h2 {
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 800;
+  }
+  .first-contact-items p {
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-top: 2%;
+    font-weight: 500;
+  }
+  .first-contact-items img {
+    position: relative;
+    top: 35px;
+    right: 14%;
+  }
+  .support-customer {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+  .support-customer-mobile {
+    display: none;
+  }
+  .support-customer p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+  }
+  .support {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .support-mobile {
+    display: none;
+  }
+  .support h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    color: rgb(70, 68, 68);
+  }
+  .support p {
+    position: relative;
+    right: 90px;
+  }
+  .support a {
+    position: relative;
+    right: 60px;
+    color: steelblue;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .customer-care {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .customer-care-mobile {
+    display: none;
+  }
+  .customer-care h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    color: rgb(70, 68, 68);
+  }
+  .customer-care a {
+    color: steelblue;
+    font-family: "Hanken Grotesk", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .whatsapp-address-facebook {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+  }
+  .whatsapp-address-facebook-mobile {
+    display: none;
+  }
+  .whatsapp-address-facebook h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    color: rgb(70, 68, 68);
+  }
+  .whatsapp-address-facebook p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: gray;
+  }
+  .whatsapp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .whatsapp-mobile {
+    display: none;
+  }
+  .whatsapp p {
+    color: steelblue;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .address-mobile {
+    display: none;
+  }
+  .address p {
+    position: relative;
+    right: 85px;
+  }
+  .facebook {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .facebook-mobile {
+    display: none;
+  }
+  .facebook p {
+    position: relative;
+    right: 20px;
+  }
+  .contact-img {
+    width: 100%;
+    background-color: rgb(194, 226, 252);
+    margin-top: 7%;
+  }
+  .contact-img-mobile {
+    display: none;
+  }
+  .contact-img img {
+    display: block;
+    margin: 0 auto;
+  }
+  #footer-items {
+    position: static;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    justify-content: space-around;
+  }
+  #footer-items-mobile {
+    display: none;
+  }
+  #footer-items p {
+    position: relative;
+    top: 80%;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  #footer-items img {
+    position: relative;
+    top: 50%;
+  }
+  .logo-footer {
+    position: relative;
+    bottom: 30px;
+  }
+  .footer-logo-mobile {
+    display: none;
+  }
+  .links {
+    position: relative;
+    top: 18px;
+    display: flex;
+    gap: 20px;
+  }
+  .links-mobile {
+    display: none;
+  }
 }
-header {
-  background-color: white;
-  height: 90px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-nav img {
-  position: relative;
-  bottom: 30px;
-  left: 30px;
-}
-nav ul {
-  display: flex;
-  gap: 80px;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-family: "Hanken Grotesk", sans-serif;
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-}
-nav ul li a:hover {
-  border: 3px solid orange;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.contact {
-  padding: 10px;
-  background-color: steelblue;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  border-radius: 10px;
-}
-.contact-items {
-  background-color: whitesmoke;
-  padding-top: 7%;
-}
-.first-contact-items {
-  text-align: center;
-}
-.first-contact-items h3 {
-  font-family: "Hanken Grotesk", sans-serif;
-  color: orange;
-  padding-top: 2%;
-}
-.first-contact-items h2 {
-  font-size: 30px;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 800;
-}
-.first-contact-items p {
-  font-size: 18px;
-  font-family: "Hanken Grotesk", sans-serif;
-  padding-top: 2%;
-  font-weight: 500;
-}
-.first-contact-items img {
-  position: relative;
-  top: 35px;
-  right: 14%;
-}
-.support-customer {
-  padding-top: 10%;
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-}
-.support-customer p {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: gray;
-}
-.support {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.support h3 {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 500;
-  color: rgb(70, 68, 68);
-}
-.support p {
-  position: relative;
-  right: 90px;
-}
-.support a {
-  position: relative;
-  right: 60px;
-  color: steelblue;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-}
-.customer-care {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.customer-care h3 {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 700;
-  color: rgb(70, 68, 68);
-}
-.customer-care a {
-  color: steelblue;
-  font-family: "Hanken Grotesk", sans-serif;
-  text-decoration: none;
-  font-weight: 600;
-}
-.whatsapp-address-facebook {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 10%;
-}
-.whatsapp-address-facebook h3 {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 18px;
-  color: rgb(70, 68, 68);
-}
-.whatsapp-address-facebook p {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: gray;
-}
-.whatsapp {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.whatsapp p {
-  color: steelblue;
-}
-.address {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.address p {
-  position: relative;
-  right: 85px;
-}
-.facebook {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.facebook p {
-  position: relative;
-  right: 20px;
-}
-.contact-img {
-  width: 100%;
-  background-color: rgb(194, 226, 252);
-  margin-top: 7%;
-}
-.contact-img img {
-  display: block;
-  margin: 0 auto;
-}
-#footer-items {
-  position: static;
-  bottom: 0;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
-  justify-content: space-around;
-}
-#footer-items p {
-  position: relative;
-  top: 80%;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-#footer-items img {
-  position: relative;
-  top: 50%;
-}
-.logo-footer {
-  position: relative;
-  bottom: 30px;
-}
-.links {
-  position: relative;
-  top: 18px;
-  display: flex;
-  gap: 20px;
+
+@media screen and (max-width: 428px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  header {
+    display: none;
+  }
+  .sidepanel {
+    height: 130px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 110px;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 2px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: left;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    padding-bottom: 10px;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 50px;
+    font-weight: 500;
+    border: none;
+    justify-content: right;
+  }
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    gap: 60px;
+    bottom: 100px;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 10px;
+    height: 120px;
+    border-width: 5px;
+  }
+
+  .openbtn {
+    font-size: 45px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: white;
+    position: relative;
+    top: 17px;
+  }
+  .contact-items-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    padding-left: 2%;
+  }
+  .first-contact-items-mobile {
+    padding-bottom: 15%;
+  }
+  .first-contact-items-mobile h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: orange;
+    padding-top: 2%;
+    text-align: center;
+  }
+  .first-contact-items-mobile h2 {
+    font-size: 35px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 800;
+    text-align: center;
+  }
+  .support-customer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+  }
+  .support-customer-mobile h3 {
+    font-size: 23px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  .support-customer-mobile p {
+    font-size: 22px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 3px;
+  }
+  .support-mobile a {
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: steelblue;
+  }
+  .customer-care-mobile a {
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: steelblue;
+  }
+  .whatsapp-address-facebook-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .whatsapp-address-facebook-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 10%;
+  }
+  .whatsapp-address-facebook-mobile h3 {
+    font-size: 23px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  .whatsapp-address-facebook-mobile p {
+    font-size: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contact-img-mobile {
+    background-color: whitesmoke;
+  }
+  .contact-img-mobile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact-items {
+    display: none;
+  }
+  .first-contact-items {
+    display: none;
+  }
+  .support-customer {
+    display: none;
+  }
+  .support {
+    display: none;
+  }
+  .customer-care {
+    display: none;
+  }
+  .whatsapp-address-facebook {
+    display: none;
+  }
+  .whatsapp {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+  .facebook {
+    display: none;
+  }
+  .contact-img {
+    display: none;
+  }
+
+  #footer-items {
+    display: none;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  #footer-items-mobile {
+    padding-top: 10%;
+  }
+  #footer-items-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  .footer-logo-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .links-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 25px;
+  }
 }

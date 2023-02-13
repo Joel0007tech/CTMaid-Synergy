@@ -1,116 +1,291 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-}
-header {
-  background-color: white;
-  height: 90px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-nav img {
-  position: relative;
-  bottom: 30px;
-  left: 30px;
-}
-nav ul {
-  display: flex;
-  gap: 80px;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-family: "Hanken Grotesk", sans-serif;
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-}
-nav ul li a:hover {
-  border: 3px solid orange;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.contact {
-  padding: 10px;
-  background-color: steelblue;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  border-radius: 10px;
+@media screen and (min-width: 429px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  header {
+    background-color: white;
+    height: 90px;
+  }
+  #mobile-view {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  nav img {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+  }
+  nav ul {
+    display: flex;
+    gap: 80px;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  nav ul li a:hover {
+    border: 3px solid orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .contact {
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .about-items-mobile {
+    display: none;
+  }
+  .about-items {
+    display: flex;
+    padding: 10%;
+    background-color: whitesmoke;
+  }
+  .about-text-mobile {
+    display: none;
+  }
+  .about-text h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .about-text p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    margin-top: 10%;
+    font-weight: 700;
+    line-height: 25px;
+    color: gray;
+  }
+  .about-text a {
+    padding: 15px;
+    background-color: steelblue;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-left: 85px;
+    padding-right: 85px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 80px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .about-items img {
+    position: relative;
+    left: 30px;
+  }
+  #footer-items-mobile {
+    display: none;
+  }
+  #footer-items {
+    position: static;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    justify-content: space-around;
+  }
+  #footer-items p {
+    position: relative;
+    top: 80%;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  #footer-items img {
+    position: relative;
+    top: 50%;
+  }
+  .logo-footer-mobile {
+    display: none;
+  }
+  .logo-footer {
+    position: relative;
+    bottom: 30px;
+  }
+  .links-mobile {
+    display: none;
+  }
+  .links {
+    position: relative;
+    top: 18px;
+    display: flex;
+    gap: 20px;
+  }
 }
 
-.about-items {
-  display: flex;
-  padding: 10%;
-  background-color: whitesmoke;
-}
-.about-text h1 {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 30px;
-  font-weight: 900;
-}
-.about-text p {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 18px;
-  margin-top: 10%;
-  font-weight: 700;
-  line-height: 25px;
-  color: gray;
-}
-.about-text a {
-  padding: 15px;
-  background-color: steelblue;
-  text-align: center;
-  font-family: "Hanken Grotesk", sans-serif;
-  padding-left: 85px;
-  padding-right: 85px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  top: 80px;
-  border-radius: 7px;
-  font-weight: 700;
-  font-size: 16px;
-}
-.about-items img {
-  position: relative;
-  left: 30px;
-}
-#footer-items {
-  position: static;
-  bottom: 0;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
-  justify-content: space-around;
-}
-#footer-items p {
-  position: relative;
-  top: 80%;
-  font-family: "Hanken Grotesk", sans-serif;
-}
-#footer-items img {
-  position: relative;
-  top: 50%;
-}
-.logo-footer {
-  position: relative;
-  bottom: 30px;
-}
-.links {
-  position: relative;
-  top: 18px;
-  display: flex;
-  gap: 20px;
+@media screen and (max-width: 428px) {
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  header {
+    display: none;
+  }
+  .sidepanel {
+    height: 130px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 110px;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 2px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: left;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: left;
+    padding-bottom: 10px;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 50px;
+    font-weight: 500;
+    border: none;
+    justify-content: right;
+  }
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    gap: 60px;
+    bottom: 100px;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 10px;
+    border-width: 5px;
+  }
+
+  .openbtn {
+    font-size: 45px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: white;
+    position: relative;
+    top: 17px;
+  }
+  .about-items {
+    display: none;
+  }
+  .about-items-mobile {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    position: relative;
+    bottom: 90px;
+  }
+  .about-text {
+    display: none;
+  }
+  .about-text-mobile h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .about-text-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 19px;
+    margin-top: 10%;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .about-text-mobile a {
+    padding: 15px;
+    background-color: steelblue;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-left: 85px;
+    padding-right: 85px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 80px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .about-items-mobile img {
+    padding-top: 40%;
+    position: relative;
+    right: 30%;
+  }
+  #footer-items {
+    display: none;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  #footer-items-mobile {
+    padding-top: 3%;
+  }
+  #footer-items-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  .footer-logo-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .links-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 25px;
+  }
 }
