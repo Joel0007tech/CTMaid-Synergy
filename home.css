@@ -841,7 +841,6 @@
     line-height: 20px;
   }
   .solutions-flex-mobile {
-    padding: 8%;
     display: flex;
     flex-direction: column;
     gap: 20px;
