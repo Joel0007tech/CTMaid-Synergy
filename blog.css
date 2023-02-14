@@ -210,14 +210,14 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    padding: 15px;
     gap: 60px;
-    bottom: 100px;
-    border: 3px solid white;
+    bottom: 140px;
+    border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
-    border-width: 5px;
     height: 120px;
+    border-width: 5px;
   }
+
   .openbtn {
     font-size: 45px;
     cursor: pointer;
@@ -225,7 +225,7 @@
     border: none;
     background-color: white;
     position: relative;
-    top: 17px;
+    top: 5px;
   }
   .blog-post-mobile {
     padding-left: 7px;

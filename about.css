@@ -197,11 +197,11 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    padding: 15px;
     gap: 60px;
-    bottom: 100px;
+    bottom: 140px;
     border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
+    height: 120px;
     border-width: 5px;
   }
 
@@ -212,7 +212,7 @@
     border: none;
     background-color: white;
     position: relative;
-    top: 17px;
+    top: 5px;
   }
   .about-items {
     display: none;

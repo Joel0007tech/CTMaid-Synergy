@@ -554,7 +554,7 @@
     z-index: 1;
     top: 110px;
     left: 0;
-    background-color: blue;
+    background-color: whitesmoke;
     overflow-x: hidden;
     padding-top: 2px;
     transition: 0.5s;
@@ -601,11 +601,11 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    padding: 15px;
     gap: 60px;
-    bottom: 100px;
+    bottom: 140px;
     border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
+    height: 120px;
     border-width: 5px;
   }
 
@@ -616,7 +616,7 @@
     border: none;
     background-color: white;
     position: relative;
-    top: 17px;
+    top: 5px;
   }
   .synergy-mobile {
     background-color: whitesmoke;
@@ -922,6 +922,11 @@
     padding-top: 10%;
     display: flex;
     flex-direction: row;
+    gap: 90px;
+  }
+  .clients-img-flex-mobile .mobil {
+    position: relative;
+    top: 50px;
   }
   .request-paragraph-link-mobile {
     padding: 5%;
