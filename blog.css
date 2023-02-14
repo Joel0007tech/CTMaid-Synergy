@@ -157,13 +157,13 @@
     display: none;
   }
   .sidepanel {
-    height: 100px;
+    height: 130px;
     width: 0;
     position: relative;
     z-index: 1;
     top: 110px;
     left: 0;
-    background-color: blue;
+    background-color: whitesmoke;
     overflow-x: hidden;
     padding-top: 2px;
     transition: 0.5s;
@@ -197,11 +197,11 @@
 
   .sidepanel .closebtn {
     position: relative;
-    bottom: 20px;
+    top: 10px;
     right: 30px;
     font-size: 45px;
     margin-left: 50px;
-    font-weight: 800;
+    font-weight: 500;
     border: none;
     justify-content: right;
   }
@@ -213,6 +213,10 @@
     padding: 15px;
     gap: 60px;
     bottom: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-width: 5px;
+    height: 120px;
   }
   .openbtn {
     font-size: 45px;
@@ -221,7 +225,37 @@
     border: none;
     background-color: white;
     position: relative;
-    bottom: 20px;
+    top: 17px;
+  }
+  .blog-post-mobile {
+    padding-left: 7px;
+  }
+  .blog-texts-mobile {
+    padding-bottom: 7%;
+  }
+  .blog-texts-mobile h1 {
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-top: 5%;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .blog-texts-mobile h2 {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-bottom: 3%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .blog-texts-mobile h3 {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-bottom: 2%;
+    padding-top: 13%;
+    color: black;
+  }
+  .blog-texts-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
   }
   .blog-post {
     display: none;
@@ -237,5 +271,25 @@
   }
   .links {
     display: none;
+  }
+  #footer-items-mobile {
+    padding-top: 10%;
+  }
+  #footer-items-mobile p {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  .footer-logo-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .links-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 25px;
   }
 }
