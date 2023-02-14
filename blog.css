@@ -156,6 +156,10 @@
   header {
     display: none;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
   .sidepanel {
     height: 130px;
     width: 0;
