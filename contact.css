@@ -284,12 +284,13 @@
     justify-content: left;
     font-family: "Hanken Grotesk", sans-serif;
     color: black;
-    font-weight: 900;
+    font-weight: 700;
   }
   .mobile-nav {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    gap: 15px;
     justify-content: left;
     padding-bottom: 10px;
   }
@@ -359,13 +360,13 @@
     gap: 60px;
   }
   .support-customer-mobile h3 {
-    font-size: 21px;
+    font-size: 18px;
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 600;
     text-align: center;
   }
   .support-customer-mobile p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -402,13 +403,13 @@
     padding-top: 10%;
   }
   .whatsapp-address-facebook-mobile h3 {
-    font-size: 21px;
+    font-size: 18px;
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 600;
     text-align: center;
   }
   .whatsapp-address-facebook-mobile p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 500;
     text-align: center;

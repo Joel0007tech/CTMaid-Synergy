@@ -172,12 +172,13 @@
     justify-content: left;
     font-family: "Hanken Grotesk", sans-serif;
     color: black;
-    font-weight: 900;
+    font-weight: 700;
   }
   .mobile-nav {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    gap: 15px;
     justify-content: left;
     padding-bottom: 10px;
   }
