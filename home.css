@@ -4,8 +4,10 @@
     box-sizing: border-box;
     margin: 0;
   }
-
-  header {
+  .mobile-heading {
+    display: none;
+  }
+  .desktop-header {
     background-color: white;
     height: 90px;
   }
@@ -528,24 +530,24 @@
 }
 
 @media screen and (max-width: 428px) {
-  header {
+  .desktop-header {
     display: none;
   }
-
   .synergy {
     display: none;
   }
-
   #footer-items {
     display: none;
   }
-
   .links {
     display: none;
   }
   html,
   body {
     overflow-x: hidden;
+  }
+  .mobile-heading {
+    position: fixed;
   }
   .sidepanel {
     height: 130px;
@@ -599,27 +601,36 @@
   .button-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 10px;
     position: relative;
-    gap: 60px;
+    gap: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     bottom: 140px;
     border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
     height: 120px;
     border-width: 5px;
+    background-color: whitesmoke;
+    width: 100%;
   }
-
+  .img-nav {
+    position: relative;
+    right: 30px;
+  }
   .openbtn {
     font-size: 45px;
     cursor: pointer;
     color: black;
     border: none;
-    background-color: white;
+    background-color: whitesmoke;
     position: relative;
     top: 5px;
+    left: 60px;
   }
   .synergy-mobile {
-    background-color: whitesmoke;
+    background-color: white;
+    padding-top: 30%;
   }
   .first-heading-mobile h1 {
     font-family: "Hanken Grotesk", sans-serif;

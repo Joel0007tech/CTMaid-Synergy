@@ -18,7 +18,7 @@
 
 <body>
   <main>
-    <header>
+    <header class="desktop-header">
       <nav>
         <img src="ctmaid 1.png" alt="CtMaid Synergy logo" />
         <ul>
@@ -29,22 +29,24 @@
         </ul>
       </nav>
     </header>
-    <div id="mobile-view">
-      <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <div class="mobile-nav">
-          <a href="about.html" target="_blank"> Home</a>
-          <a href="blog.html" target="_blank"> Blog</a>
-          <a href="about.html" target="_blank"> About Us</a>
-          <a href="contact.html" target="_blank">Contact Us</a>
-        </div>
+   <!-- for mobile view -->
+   <div id="mobile-view">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="mobile-nav">
+        <a href="about.html" target="_blank"> Home</a>
+        <a href="blog.html" target="_blank"> Blog</a>
+        <a href="about.html" target="_blank"> About Us</a>
+        <a href="contact.html" target="_blank">Contact Us</a>
       </div>
+    </div>
+    <header class="mobile-heading">
       <div class="button-nav">
         <img src="ctmaid 1.png" height="150px" width="100px" class="img-nav" />
         <button class="openbtn" onclick="openNav()">≡</button>
       </div>
+    </header>
+  </div>
     <section class="about-items">
       <div class="about-text">
         <h1 style="font-family: Arial, Helvetica, sans-serif;">We are a team that believe in<br>
@@ -132,5 +134,5 @@
     </div>
   </footer>
 </body>
-<script src="/home.js"></script>
+<script src="home.js"></script>
 </html>

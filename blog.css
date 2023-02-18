@@ -7,7 +7,10 @@
   #mobile-view {
     display: none;
   }
-  header {
+  .mobile-heading {
+    display: none;
+  }
+  .desktop-header {
     background-color: white;
     height: 90px;
   }
@@ -153,12 +156,25 @@
     box-sizing: border-box;
     margin: 0;
   }
-  header {
+  .desktop-header {
+    display: none;
+  }
+  .synergy {
+    display: none;
+  }
+  #footer-items {
+    display: none;
+  }
+  .links {
     display: none;
   }
   html,
   body {
     overflow-x: hidden;
+  }
+  .mobile-heading {
+    position: fixed;
+    width: 100%;
   }
   .sidepanel {
     height: 130px;
@@ -195,7 +211,6 @@
     justify-content: left;
     padding-bottom: 10px;
   }
-
   .sidepanel a:hover {
     color: #f1f1f1;
   }
@@ -213,27 +228,36 @@
   .button-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 10px;
     position: relative;
-    gap: 60px;
+    gap: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     bottom: 140px;
     border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
     height: 120px;
     border-width: 5px;
+    background-color: whitesmoke;
+    width: 100%;
   }
-
+  .img-nav {
+    position: relative;
+    right: 30px;
+  }
   .openbtn {
     font-size: 45px;
     cursor: pointer;
     color: black;
     border: none;
-    background-color: white;
+    background-color: whitesmoke;
     position: relative;
     top: 5px;
+    left: 60px;
   }
   .blog-post-mobile {
     padding-left: 7px;
+    padding-top: 30%;
   }
   .blog-texts-mobile {
     padding-bottom: 7%;

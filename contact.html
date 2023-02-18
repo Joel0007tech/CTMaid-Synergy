@@ -18,7 +18,7 @@
 
 <body>
   <main>
-    <header>
+    <header class="desktop-header">
       <nav>
         <img src="ctmaid 1.png" alt="CtMaid Synergy logo" />
         <ul>
@@ -29,11 +29,10 @@
         </ul>
       </nav>
     </header>
+    <!-- for mobile view -->
     <div id="mobile-view">
       <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="mobile-nav">
           <a href="about.html" target="_blank"> Home</a>
           <a href="blog.html" target="_blank"> Blog</a>
@@ -41,10 +40,13 @@
           <a href="contact.html" target="_blank">Contact Us</a>
         </div>
       </div>
-      <div class="button-nav">
-        <img src="ctmaid 1.png" height="150px" width="100px" class="img-nav" />
-        <button class="openbtn" onclick="openNav()">≡</button>
-      </div>
+      <header class="mobile-heading">
+        <div class="button-nav">
+          <img src="ctmaid 1.png" height="150px" width="100px" class="img-nav" />
+          <button class="openbtn" onclick="openNav()">≡</button>
+        </div>
+      </header>
+    </div>
     <section class="contact-items-mobile">
       <div class="first-contact-items-mobile">
         <h3>Contact Us</h3>
