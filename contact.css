@@ -279,8 +279,12 @@
     position: fixed;
     width: 100%;
   }
+  #mobile-view {
+    position: relative;
+    bottom: 45px;
+  }
   .sidepanel {
-    height: 130px;
+    height: 180px;
     width: 0;
     position: relative;
     z-index: 1;
@@ -339,7 +343,7 @@
     bottom: 140px;
     border-bottom: 3px solid whitesmoke;
     border-radius: 10px;
-    height: 120px;
+    height: 70px;
     border-width: 5px;
     background-color: whitesmoke;
     width: 100%;
@@ -347,6 +351,7 @@
   .img-nav {
     position: relative;
     right: 30px;
+    bottom: 20px;
   }
   .openbtn {
     font-size: 45px;
